@@ -1,0 +1,251 @@
+  html {
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 16px; /* Base font size for scalability */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+      background-color: #12161C;
+    color: #a4a8a4;
+    font-size: 1rem; /* Relative unit */
+    font-family: "Inter", sans-serif;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+a {
+    color: #b1b4b1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+    color: #cbcdcb;
+    outline: none; /* For modern browsers */
+    text-decoration: underline;
+}
+
+strong {
+    font-weight: 600;
+    color: #22c55e;
+}
+
+.container {
+    max-width: 56rem; /* Flexible container size */
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+}
+
+.content .header {
+    padding: 4rem 1rem 0.5rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.content .header p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #e5e5e5;
+    margin-top: 0.5rem;
+}
+
+.content .main {
+    position: relative;
+    margin: 1rem auto;
+    z-index: 1;
+      background-color: #1e2430;
+    border-radius: 0.7rem;
+    padding: 2rem;
+              border: 1px solid #3c4556;
+
+}
+
+.content .main ul.m-list {
+    margin: 1rem 0;
+    padding: 0;
+    list-style: none;
+
+        }
+
+.content .main ul.m-list li {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4b566a;
+    padding: 0.8rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 0.4rem;
+    border: 1px solid #3e403f;
+    transition: background 0.3s, border-color 0.3s;
+    color: #777b77;
+}
+
+
+.content .main ul.m-list li span:first-child {
+    font-weight: 600;
+    color: #e5e5e5;
+    font-size: 1.1rem;
+}
+
+.content .main ul.m-list li span:last-child {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.content .main ul.m-list li span:last-child:before {
+    content: "";
+    display: inline-block;
+    background: #22c55e;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.content .main ul.m-list li:hover {
+    background: #003a42;
+    border-color: #00acc1;
+}
+
+.content .main ul.m-list li:hover span:last-child {
+    color: #e5e5e5;
+}
+
+.content .main .notice {
+    background: #131514;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.content .main .notice .start i {
+    font-size: 1.5rem;
+    color: #e5e5e5;
+}
+
+.content .main .notice .stop {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    color: #e5e5e5;
+}
+
+.content .main .notice .stop .twitter {
+    background: #00acc1;
+    border-radius: 0.3rem;
+    padding: 0.4rem 0.6rem;
+    display: inline-block;
+    color: #131514;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.content .main .notice .stop .twitter:hover {
+    background: #00d9f4;
+}
+
+.content .footer {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.faq img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    .content .header p {
+        font-size: 1rem;
+    }
+
+    .content .main ul.m-list li {
+        padding: 0.6rem 0.8rem;
+    }
+}
+
+h1, h2 {
+    color: #ffffff; /* MÃ u tráº¯ng */
+}
+h3 {
+    color: #e5e5e5; /* MÃ u tráº¯ng nháº¡t */
+}
+p {
+    line-height: 1.2; /* Giáº£m line-height xuá»‘ng 1.2 thay vÃ¬ 1.4 */
+       margin-bottom: 0.5em; /* Giáº£m khoáº£ng cÃ¡ch bottom margin cá»§a p */
+}
+
+h1, h2, h3 {
+    line-height: 1.1; /* Giáº£m khoáº£ng cÃ¡ch giá»¯a cÃ¡c dÃ²ng cho tiÃªu Ä‘á» */
+}
+
+.bntl {
+    background-color: #ff5722; /* MÃ u cam Ä‘áº­m, ná»•i báº­t */
+    color: white; /* Chá»¯ tráº¯ng Ä‘á»ƒ tÆ°Æ¡ng pháº£n */
+    font-weight: bold; /* TÄƒng Ä‘á»™ dÃ y chá»¯ */
+    padding: 10px 20px; /* TÄƒng khoáº£ng cÃ¡ch giá»¯a chá»¯ vÃ  viá»n */
+    margin: 5px 0; /* Khoáº£ng cÃ¡ch giá»¯a cÃ¡c má»¥c */
+    border-radius: 8px; /* LÃ m bo gÃ³c Ä‘á»ƒ trÃ´ng má»m máº¡i hÆ¡n */
+    cursor: pointer; /* ThÃªm biá»ƒu tÆ°á»£ng chuá»™t chá»‰ tay */
+    text-align: center; /* CÄƒn giá»¯a ná»™i dung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Äá»• bÃ³ng Ä‘á»ƒ thÃªm chiá»u sÃ¢u */
+    transition: transform 0.2s, background-color 0.2s; /* Hiá»‡u á»©ng khi hover */
+}
+.content .main ul.m-list li.bntl:hover {
+    background-color: #f57c00; /* Cam dá»‹u cho hiá»‡u á»©ng hover */
+       transform: scale(1.05); /* PhÃ³ng to nháº¹ khi hover */
+}
+.content .main ul.m-list li.bntl {
+    background-color: #4a4a4a; /* Cam sÃ¡ng, dá»‹u máº¯t */
+}
+
+/* Add this CSS to ensure responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Optional: Center the image */
+}
+h1, h2, h3, p {
+    margin: 0.5em 0; /* Giáº£m khoáº£ng cÃ¡ch dá»c giá»¯a cÃ¡c tháº» */
+}
+        
+         .btn-link {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #ff4081;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin: 15px 0;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn-link:hover {
+      background-color: #e73370;
+    }
